@@ -24,9 +24,16 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
+let itemPrice = totalCost / numberOfItems;
+let discount = 5;
 
-console.log(d);
+let receiptMessage = customerName + " bought " + numberOfItems + " items for $" + totalCost + ".";
+let finalTotal = totalCost - discount;
+
+
+console.log(receiptMessage);
+console.log("Price per item: $" + itemPrice);
+console.log("Final total after discount: $" + finalTotal);
